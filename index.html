@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        border-bottom:1px solid gray;
+        padding:5px;
+        display:flex;
+        align-items:center;
+      }
+
+      #container {
+        padding:5px;
+      }
+      #container > * {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border:1px dotted black;
+      }
+
+      #canvas-container {
+        position: relative;
+        height:500px;
+      }
+
+      #canvas-container > * {
+        position:absolute;
+        left: 0;
+        top:0;
+      }
+
+      #statusLabel {
+        font-family: Tahoma;
+        font-size:12px;
+        background-color:white;
+        margin-left:auto;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/gliffy/canvas2svg@master/canvas2svg.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="header">
+      <button id="download">Download svg</button>
+      <span id="statusLabel"></span>
+      </div>
+      <div id="container">
+        <div id="canvas-container">
+          <canvas id="renderedCanvas"></canvas>
+          <canvas id="currentPathCanvas"></canvas>
+        </div>
+      </div>
+      <br />
+      
+    </div>
+  </body>
+</html>

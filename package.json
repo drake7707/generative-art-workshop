@@ -1,0 +1,13 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/delaunator": "^5.0.0",
+    "delaunator": "^5.0.0",
+    "simplify-js": "^1.2.4"
+  },
+  "prettier": {
+    "printWidth": 200
+  }
+}
